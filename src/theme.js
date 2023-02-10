@@ -4,14 +4,7 @@ import createBreakpoints from "@mui/system/createTheme/createBreakpoints"
 const breakPoints = createBreakpoints({})
 
 const theme = createTheme({
-  palette: {
-    primary: {
-      main: "green",
-    },
-    blue: {
-      main: "blue",
-    },
-  },
+  palette: {},
   typography: {
     h2: {
       fontFamily: "Montserrat, sans-serif",

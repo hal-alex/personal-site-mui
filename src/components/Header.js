@@ -13,14 +13,27 @@ import {
   Button,
 } from "@mui/material"
 
+import DropdownMenu from "./DropdownMenu"
+
 const styles = {
   appBar: {
-    background: "gray",
+    background: "black",
+    display: "flex",
   },
   logo: {
     color: "blue",
     width: "75px",
     height: "75px",
+  },
+  container: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  links: {
+    padding: "10px",
+  },
+  linkContainer: {
+    display: "flex",
   },
 }
 
@@ -28,21 +41,28 @@ const Header = () => {
   const pages = [
     { title: "About" },
     { title: "Skills" },
-    { title: "Project" },
+    { title: "Projects" },
     { title: "Contact" },
   ]
 
   return (
     <AppBar position="static" sx={styles.appBar}>
-      <Container maxWidth="xl" sx={styles.container}>
-        <Toolbar>
+      <Container maxWidth="xl">
+        <Toolbar sx={styles.container}>
           <Box component="a" href="/">
             <HomeIcon sx={styles.logo}></HomeIcon>
           </Box>
-          {pages.map((item, index) => {
-            return <Typography>{item.title}</Typography>
-          })}
-          <Typography>Hello</Typography>
+          <Box sx={styles.linkContainer}>
+            {pages.map((item, index) => {
+              return item.title === "Projects" ? (
+                <DropdownMenu></DropdownMenu>
+              ) : (
+                <Link href="/" key={index} sx={styles.links}>
+                  {item.title}
+                </Link>
+              )
+            })}
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
