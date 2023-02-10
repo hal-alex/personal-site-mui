@@ -17,7 +17,7 @@ import DropdownMenu from "./DropdownMenu"
 
 const styles = {
   appBar: {
-    background: "black",
+    background: "white",
     display: "flex",
   },
   logo: {
@@ -49,15 +49,15 @@ const Header = () => {
     <AppBar position="static" sx={styles.appBar}>
       <Container maxWidth="xl">
         <Toolbar sx={styles.container}>
-          <Box component="a" href="/">
+          <Box component="a" href="">
             <HomeIcon sx={styles.logo}></HomeIcon>
           </Box>
           <Box sx={styles.linkContainer}>
             {pages.map((item, index) => {
               return item.title === "Projects" ? (
-                <DropdownMenu></DropdownMenu>
+                <DropdownMenu key={index}></DropdownMenu>
               ) : (
-                <Link href="/" key={index} sx={styles.links}>
+                <Link to="/#about" key={index} sx={styles.links}>
                   {item.title}
                 </Link>
               )

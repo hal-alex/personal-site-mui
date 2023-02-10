@@ -1,4 +1,4 @@
-import { Typography, Box, Button } from "@mui/material"
+import { Typography, Box, Button, Link } from "@mui/material"
 
 const Hero = () => {
   const styles = {
@@ -47,11 +47,15 @@ const Hero = () => {
           </Typography>
           <Typography variant="body1" sx={styles.text}>
             I am a full-stack developer with over 8 years of fintech and
-            blockchain experience, and an active GitHub account.
+            blockchain experience, and an active{" "}
+            <Link href="https://github.com/hal-alex" target="_blank">
+              GitHub account
+            </Link>
+            .
           </Typography>
           <Box sx={styles.buttonContainer}>
             <Button variant="contained" sx={styles.ctaButton}>
-              View Skills
+              <Link>View Skills</Link>
             </Button>
             <Button variant="contained" sx={styles.ctaButton}>
               View Projects

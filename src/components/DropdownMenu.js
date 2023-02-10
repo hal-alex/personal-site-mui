@@ -9,6 +9,7 @@ export default function BasicMenu() {
     dropdownMenu: {
       textTransform: "capitalize",
       pt: "9px",
+      textDecoration: "underline",
     },
   }
 
