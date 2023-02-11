@@ -48,7 +48,7 @@ const Header = () => {
           <Box sx={styles.linkContainer}>
             {pages.map((item, index) => {
               return item.title === "Projects" ? (
-                <DropdownMenu key={index}></DropdownMenu>
+                <DropdownMenu key={index} sx={styles.links}></DropdownMenu>
               ) : (
                 <Link href={item.inpageURL} key={index} sx={styles.links}>
                   {item.title}
