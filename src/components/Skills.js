@@ -49,7 +49,7 @@ const Skills = () => {
   }
 
   return (
-    <Box sx={styles.container}>
+    <Box sx={styles.container} id="skills">
       <Typography variant="h2">Skills</Typography>
 
       <Box sx={styles.wrapper}>

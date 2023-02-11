@@ -39,17 +39,17 @@ const styles = {
 
 const Header = () => {
   const pages = [
-    { title: "About" },
-    { title: "Skills" },
+    { title: "About", inpageURL: "/#about" },
+    { title: "Skills", inpageURL: "/#skills" },
     { title: "Projects" },
-    { title: "Contact" },
+    { title: "Contact", inpageURL: "/#contact" },
   ]
 
   return (
     <AppBar position="static" sx={styles.appBar}>
       <Container maxWidth="xl">
         <Toolbar sx={styles.container}>
-          <Box component="a" href="">
+          <Box component="a" href="/">
             <HomeIcon sx={styles.logo}></HomeIcon>
           </Box>
           <Box sx={styles.linkContainer}>
@@ -57,7 +57,7 @@ const Header = () => {
               return item.title === "Projects" ? (
                 <DropdownMenu key={index}></DropdownMenu>
               ) : (
-                <Link to="/#about" key={index} sx={styles.links}>
+                <Link href={item.inpageURL} key={index} sx={styles.links}>
                   {item.title}
                 </Link>
               )

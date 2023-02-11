@@ -35,7 +35,9 @@ const Projects = () => {
     <Box sx={styles.projects}>
       <Box sx={styles.wrapper}>
         <Box sx={styles.project1}>
-          <Typography variant="h3">Project 1 - Factored MVP</Typography>
+          <Typography variant="h3" id="project-1">
+            Project 1 - Factored MVP
+          </Typography>
           <Divider>
             <Typography variant="body1">Overview</Typography>
           </Divider>

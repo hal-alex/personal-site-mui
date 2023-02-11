@@ -19,7 +19,7 @@ const About = () => {
   }
 
   return (
-    <Box sx={styles.container}>
+    <Box sx={styles.container} id="about">
       <Typography variant="h2">About</Typography>
       <Box sx={styles.wrapper}>
         <Typography>

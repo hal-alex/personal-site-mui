@@ -43,8 +43,12 @@ export default function BasicMenu() {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose}>Project 1 - Factored MVP</MenuItem>
-        <MenuItem onClick={handleClose}>Project 2 - Personal Site</MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href="/#project-1">Project 1 - Factored MVP</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href="/#project-2">Project 2 - Personal Site</Link>
+        </MenuItem>
       </Menu>
     </Box>
   )
