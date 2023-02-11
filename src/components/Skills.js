@@ -25,102 +25,143 @@ const Skills = () => {
       display: "flex",
       flexDirection: "column",
       minHeight: "100vh",
+      gap: "20px",
+      textAlign: "center",
+    },
+    wrapper: {
+      display: "flex",
+      flexDirection: "column",
+      gap: "30px",
+    },
+    skillsContainer: {
+      width: "100%",
+      display: "flex",
+      mt: "10px",
+      justifyContent: "space-evenly",
+    },
+    logoContainer: {
+      width: "100px",
+      textAlign: "center",
+    },
+    skillsLogo: {
+      width: "100%",
     },
   }
 
   return (
     <Box sx={styles.container}>
       <Typography variant="h2">Skills</Typography>
+
       <Box sx={styles.wrapper}>
-        <Box sx={styles.languages}>
-          <Divider>
-            <Typography variant="h3">Languages</Typography>
-          </Divider>
-          <Box>
-            <img src={python} alt="python" />
-            <Typography variant="body1">Python</Typography>
+        <Divider>
+          <Typography variant="h3">Languages</Typography>
+        </Divider>
+        <Box sx={styles.skillsContainer}>
+          <Box sx={styles.logoContainer}>
+            <img src={python} alt="python" style={styles.skillsLogo} />
+            <Typography variant="body1" style={{ textAlign: "center" }}>
+              Python
+            </Typography>
           </Box>
-          <Box>
-            <img src={javascript} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img src={javascript} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">JavaScript (including ES6+)</Typography>
           </Box>
-          <Box>
-            <img src={html} alt="html5" />
+          <Box sx={styles.logoContainer}>
+            <img src={html} alt="html5" style={styles.skillsLogo} />
             <Typography variant="body1">HTML5</Typography>
           </Box>
-          <Box>
-            <img src={css} alt="css" />
+          <Box sx={styles.logoContainer}>
+            <img src={css} alt="css" style={styles.skillsLogo} />
             <Typography variant="body1">CSS3</Typography>
           </Box>
-          <Divider>
-            <Typography variant="h3">Frameworks & Libraries</Typography>
-          </Divider>
-          <Box>
-            <img src={react_logo} alt="javascript" />
+        </Box>
+        <Divider>
+          <Typography variant="h3">Frameworks & Libraries</Typography>
+        </Divider>
+        <Box sx={styles.skillsContainer}>
+          <Box sx={styles.logoContainer}>
+            <img src={react_logo} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">React</Typography>
           </Box>
-          <Box>
-            <img src={material_ui} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img src={material_ui} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">Material UI</Typography>
           </Box>
-          <Box>
-            <img src={django} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img src={django} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">Django</Typography>
           </Box>
-          <Box>
-            <img src={drf} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img src={drf} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">Django Rest Framework</Typography>
           </Box>
-          <Divider>
-            <Typography variant="h3">Database</Typography>
-          </Divider>
-          <Box>
-            <img src={pg} alt="javascript" />
+        </Box>
+        <Divider>
+          <Typography variant="h3">Database</Typography>
+        </Divider>
+        <Box sx={styles.skillsContainer}>
+          <Box sx={styles.logoContainer}>
+            <img src={pg} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">PostgreSQL</Typography>
           </Box>
-          <Divider>
-            <Typography variant="h3">Version Control</Typography>
-          </Divider>
-          <Box>
-            <img src={git} alt="javascript" />
+        </Box>
+
+        <Divider>
+          <Typography variant="h3">Version Control</Typography>
+        </Divider>
+        <Box sx={styles.skillsContainer}>
+          <Box sx={styles.logoContainer}>
+            <img src={git} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">Git</Typography>
           </Box>
-          <Box>
-            <img src={github} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img src={github} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">GitHub</Typography>
           </Box>
-          <Divider>
-            <Typography variant="h3">Deployment</Typography>
-          </Divider>
-          <Box>
-            <img src={aws_eb} alt="javascript" />
+        </Box>
+
+        <Divider>
+          <Typography variant="h3">Deployment</Typography>
+        </Divider>
+
+        <Box sx={styles.skillsContainer}>
+          <Box sx={styles.logoContainer}>
+            <img src={aws_eb} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">AWS Elastic Beanstalk</Typography>
           </Box>
-          <Box>
-            <img src={aws_ec2} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img src={aws_ec2} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">AWS EC2</Typography>
           </Box>
-          <Box>
-            <img src={s3} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img src={s3} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">AWS S3</Typography>
           </Box>
-          <Box>
-            <img src={load_balancer} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img
+              src={load_balancer}
+              alt="javascript"
+              style={styles.skillsLogo}
+            />
             <Typography variant="body1">AWS Load Balancer</Typography>
           </Box>
-          <Box>
-            <img src={amplify} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img src={amplify} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">AWS Amplify</Typography>
           </Box>
-          <Divider>
-            <Typography variant="h3">Other Tools & Tech I use</Typography>
-          </Divider>
-          <Box>
-            <img src={vs_code} alt="javascript" />
+        </Box>
+
+        <Divider>
+          <Typography variant="h3">Other Tools & Tech I use</Typography>
+        </Divider>
+        <Box sx={styles.skillsContainer}>
+          <Box sx={styles.logoContainer}>
+            <img src={vs_code} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">Visual Studio Code</Typography>
           </Box>
-          <Box>
-            <img src={docker} alt="javascript" />
+          <Box sx={styles.logoContainer}>
+            <img src={docker} alt="javascript" style={styles.skillsLogo} />
             <Typography variant="body1">Docker</Typography>
           </Box>
         </Box>
