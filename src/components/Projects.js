@@ -6,6 +6,7 @@ import {
   List,
   ListItem,
   Grid,
+  Link,
 } from "@mui/material"
 import Accordion from "@mui/material/Accordion"
 import AccordionSummary from "@mui/material/AccordionSummary"
@@ -13,12 +14,20 @@ import AccordionDetails from "@mui/material/AccordionDetails"
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import DoneIcon from "@mui/icons-material/Done"
 
+import GitHubIcon from "@mui/icons-material/GitHub"
+import PreviewIcon from "@mui/icons-material/Preview"
+
 const Projects = () => {
   const styles = {
     projects: {
       background: "#E9D8E1",
       display: "flex",
       minHeight: "100vh",
+    },
+    projectLinks: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
     },
   }
 
@@ -34,6 +43,44 @@ const Projects = () => {
             I built an MVP from 0 for a client that allows landlords to take out
             loans and use their future property rent as collateral.
           </Typography>
+          <Grid container>
+            <Grid item md={6}>
+              <Link
+                href="https://github.com/hal-alex/factored-mvp"
+                sx={styles.projectLinks}
+              >
+                <GitHubIcon></GitHubIcon>
+                <Typography>View Frontend Repo</Typography>
+              </Link>
+            </Grid>
+            <Grid item md={6}>
+              <Link
+                href="https://github.com/hal-alex/factored-mvp-backend"
+                sx={styles.projectLinks}
+              >
+                <GitHubIcon></GitHubIcon>
+                <Typography>View Backend Repo</Typography>
+              </Link>
+            </Grid>
+            <Grid item md={6}>
+              <Link
+                href="https://github.com/hal-alex/factored-mvp-backend"
+                sx={styles.projectLinks}
+              >
+                <PreviewIcon></PreviewIcon>
+                <Typography>View Deployed App</Typography>
+              </Link>
+            </Grid>
+            <Grid item md={6}>
+              <Link
+                href="https://www.app.factored.co/about-factored-app/"
+                sx={styles.projectLinks}
+              >
+                <PreviewIcon></PreviewIcon>
+                <Typography>Verify I Built This App</Typography>
+              </Link>
+            </Grid>
+          </Grid>
           <Divider>
             <Typography variant="body1">Key Features</Typography>
           </Divider>
@@ -131,7 +178,7 @@ const Projects = () => {
             <AccordionDetails>
               <Typography>
                 Django Rest Framework (DRF) – the backend is based on Django and
-                DRF, and for the database, I used PostgreSQL. I configured two
+                DRF, and for the database, I used PostgreSQL. I configured 2
                 third party APIs into the backend – Sendgrid to send emails to
                 existing users that would like to reset their passwords, and
                 created a webhook for Persona (along with IP whitelisting) that
@@ -140,8 +187,13 @@ const Projects = () => {
                 change the “is_verified” flag in the backend.
                 <br></br>
                 <br></br>I also utilised UUID and short UUID for identifying
-                users and loans, as that is more secure that using sequential
+                users and loans, as that is more secure than using sequential
                 IDs that are default in Django.
+                <br></br>
+                <br></br>
+                To create superuser admin accounts, I would `ssh` into the EC2
+                instance and use the CLI to configure the administrator
+                commands.
               </Typography>
             </AccordionDetails>
           </Accordion>
