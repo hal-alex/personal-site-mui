@@ -15,36 +15,38 @@ const About = () => {
       maxWidth: "75%",
       height: "75%",
       flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      gap: "35px",
+      textAlign: "center",
     },
   }
 
   return (
     <Box sx={styles.container} id="about">
-      <Typography variant="h2">About</Typography>
       <Box sx={styles.wrapper}>
+        <Typography variant="h2">About</Typography>
         <Typography>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eaque
-          sint porro harum, quia sit ea reiciendis voluptatibus soluta
-          laboriosam repellendus, modi optio nulla ducimus in, maiores aliquam
-          minima. Placeat.
+          I have been working for fintech startups since early 2015 and over the
+          years, I was fortunate enough to be involved in an array of
+          non-developer functions such as managing teams, marketing, investor
+          relations, customer support and more.
         </Typography>
         <Typography>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eaque
-          sint porro harum, quia sit ea reiciendis voluptatibus soluta
-          laboriosam repellendus, modi optio nulla ducimus in, maiores aliquam
-          minima. Placeat.
+          Whilst my previous titles were not explicitly technical, I had
+          significant exposure to working with software engineers, as well as
+          in-depth product testing and creating detailed specifications for new
+          product features.
         </Typography>
         <Typography>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eaque
-          sint porro harum, quia sit ea reiciendis voluptatibus soluta
-          laboriosam repellendus, modi optio nulla ducimus in, maiores aliquam
-          minima. Placeat.
+          In 2022, I decided to complete my skillset and finally become a
+          developer. This process begun with self-teaching and eventually
+          progressed into an intense, full-time bootcamp that gave me valuable
+          foundational knowledge.
         </Typography>
         <Typography>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eaque
-          sint porro harum, quia sit ea reiciendis voluptatibus soluta
-          laboriosam repellendus, modi optio nulla ducimus in, maiores aliquam
-          minima. Placeat.
+          Currently, I am working on self-inspired and unique projects, and
+          learning new frameworks.
         </Typography>
       </Box>
     </Box>
