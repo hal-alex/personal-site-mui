@@ -1,6 +1,6 @@
 import React from "react"
 
-import HomeIcon from "@mui/icons-material/Home"
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 
 import {
   AppBar,
@@ -17,17 +17,13 @@ import DropdownMenu from "./DropdownMenu"
 
 const styles = {
   appBar: {
-    background: "white",
+    background: "#F5F5F5",
     display: "flex",
-  },
-  logo: {
-    color: "blue",
-    width: "75px",
-    height: "75px",
   },
   container: {
     display: "flex",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
+    justifyContent: "center",
   },
   links: {
     padding: "10px",
@@ -46,12 +42,9 @@ const Header = () => {
   ]
 
   return (
-    <AppBar position="static" sx={styles.appBar}>
+    <AppBar position="sticky" elevation={0} sx={styles.appBar}>
       <Container maxWidth="xl">
         <Toolbar sx={styles.container}>
-          <Box component="a" href="/">
-            <HomeIcon sx={styles.logo}></HomeIcon>
-          </Box>
           <Box sx={styles.linkContainer}>
             {pages.map((item, index) => {
               return item.title === "Projects" ? (

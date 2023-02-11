@@ -32,7 +32,7 @@ const Projects = () => {
   }
 
   return (
-    <Box sx={styles.projects}>
+    <Box sx={styles.projects} id="projects">
       <Box sx={styles.wrapper}>
         <Box sx={styles.project1}>
           <Typography variant="h3" id="project-1">

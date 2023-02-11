@@ -1,17 +1,19 @@
 import { Typography, Box, Button, Link } from "@mui/material"
 
 const Hero = () => {
+  let s = new Date().toString().split(" ")[4].split(":")[0]
+
+  console.log(s)
   const styles = {
     hero: (theme) => ({
+      background: "#F5F5F5",
+      display: "flex",
+      minHeight: "92vh",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "50px",
       //   padding: "100px",
-      [theme.breakpoints.up("md")]: {
-        background: "#E9D8E1",
-        display: "flex",
-        minHeight: "92vh",
-        justifyContent: "center",
-        alignItems: "center",
-        // padding: "50px",
-      },
+      [theme.breakpoints.up("md")]: {},
     }),
     // wrapper: (theme) => ({
     //   padding: "20px",
@@ -54,15 +56,22 @@ const Hero = () => {
             .
           </Typography>
           <Box sx={styles.buttonContainer}>
-            <Button variant="contained" sx={styles.ctaButton}>
-              <Link>View Skills</Link>
-            </Button>
-            <Button variant="contained" sx={styles.ctaButton}>
-              View Projects
-            </Button>
-            <Button variant="contained" sx={styles.ctaButton}>
-              Contact Me
-            </Button>
+            <Link href="/#skills">
+              <Button variant="contained" sx={styles.ctaButton}>
+                View Skills
+              </Button>
+            </Link>
+
+            <Link href="/#projects">
+              <Button variant="contained" sx={styles.ctaButton}>
+                View Projects
+              </Button>
+            </Link>
+            <Link href="/#skills">
+              <Button variant="contained" sx={styles.ctaButton}>
+                Contact Me
+              </Button>
+            </Link>
           </Box>
         </Box>
       </Box>
