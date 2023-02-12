@@ -50,9 +50,8 @@ const Skills = () => {
 
   return (
     <Box sx={styles.container} id="skills">
-      <Typography variant="h2">Skills</Typography>
-
       <Box sx={styles.wrapper}>
+        <Typography variant="h2">Skills</Typography>
         <Divider>
           <Typography variant="h3">Languages</Typography>
         </Divider>
