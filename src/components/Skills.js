@@ -1,15 +1,15 @@
 import { Box, Typography, Divider } from "@mui/material"
-import python from "../assets/python.png"
-import javascript from "../assets/javascript.png"
-import html from "../assets/html.png"
-import css from "../assets/css.png"
-import react_logo from "../assets/logo512.png"
-import material_ui from "../assets/material-ui-1.svg"
+import python from "../assets/icons-python.svg"
+import javascript from "../assets/icons-javascript.svg"
+import html from "../assets/icons-html-5.svg"
+import css from "../assets/css3.svg"
+import react_logo from "../assets/icons-react.svg"
+import material_ui from "../assets/icons-material-ui.svg"
 import django from "../assets/django.png"
 import drf from "../assets/drf.png"
 import pg from "../assets/pg.svg"
-import git from "../assets/git-icon.svg"
-import github from "../assets/github.png"
+import git from "../assets/icons-git.svg"
+import github from "../assets/icons-github.svg"
 import vs_code from "../assets/vscode.svg"
 import docker from "../assets/docker.webp"
 import aws_eb from "../assets/aws-eb.svg"
@@ -32,6 +32,7 @@ const Skills = () => {
       display: "flex",
       flexDirection: "column",
       gap: "30px",
+      maxWidth: "75%",
     },
     skillsContainer: {
       width: "100%",
