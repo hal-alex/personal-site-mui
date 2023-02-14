@@ -27,7 +27,8 @@ const Skills = () => {
       minHeight: "100vh",
       justifyContent: "center",
       alignItems: "center",
-      pt: "60px"
+      pt: "60px",
+      pb: "60px",
     },
     wrapper: {
       display: "flex",
