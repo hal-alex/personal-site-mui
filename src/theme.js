@@ -38,7 +38,7 @@ const theme = createTheme({
       color: "black",
       [breakPoints.up("md")]: {
         fontWeight: 500,
-        fontSize: "24px",
+        fontSize: "20px",
         lineHeight: "29px",
       },
     },

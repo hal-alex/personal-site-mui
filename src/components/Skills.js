@@ -21,27 +21,33 @@ import amplify from "../assets/amplify.jpg"
 const Skills = () => {
   const styles = {
     container: {
-      //   background: "#FD8A8A",
+      background: "#F5F5F5",
       display: "flex",
       flexDirection: "column",
       minHeight: "100vh",
-      gap: "20px",
-      textAlign: "center",
+      justifyContent: "center",
+      alignItems: "center",
+      pt: "60px"
     },
     wrapper: {
       display: "flex",
+      width: "75%",
+      height: "75",
+      gap: "35px",
       flexDirection: "column",
-      gap: "30px",
-      maxWidth: "75%",
+      textAlign: "center",
     },
     skillsContainer: {
       width: "100%",
       display: "flex",
       mt: "10px",
       justifyContent: "space-evenly",
+      flexWrap: "wrap",
     },
     logoContainer: {
       width: "100px",
+      display: "flex",
+      flexDirection: "column",
       textAlign: "center",
     },
     skillsLogo: {
@@ -153,12 +159,12 @@ const Skills = () => {
         </Box>
 
         <Divider>
-          <Typography variant="h3">Other Tools & Tech I use</Typography>
+          <Typography variant="h3">Other Tools & Tech</Typography>
         </Divider>
         <Box sx={styles.skillsContainer}>
           <Box sx={styles.logoContainer}>
             <img src={vs_code} alt="javascript" style={styles.skillsLogo} />
-            <Typography variant="body1">Visual Studio Code</Typography>
+            <Typography variant="body1">VS Code</Typography>
           </Box>
           <Box sx={styles.logoContainer}>
             <img src={docker} alt="javascript" style={styles.skillsLogo} />

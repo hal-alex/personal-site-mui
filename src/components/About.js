@@ -45,8 +45,8 @@ const About = () => {
           foundational knowledge.
         </Typography>
         <Typography>
-          Currently, I am working on self-inspired and unique projects, and
-          learning new frameworks.
+          Currently, I am improving my existing stack and learning new
+          technologies through the process of building unique projects.
         </Typography>
       </Box>
     </Box>
