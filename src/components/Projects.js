@@ -354,6 +354,10 @@ const Projects = () => {
         <Typography variant="body1">
           I built this full stack application that filters over 100 3D printers
           across 16 different parameters set by the user.
+          <br></br>
+          <br></br>
+          GitHub repos for frontend and backend apps are private for commercial
+          reasons.
         </Typography>
         <Grid container>
           <Grid item md={6}>
@@ -368,7 +372,7 @@ const Projects = () => {
           </Grid>
           <Grid item md={6}>
             <Link
-              href="https://www.app.factored.co/about-factored-app/"
+              href="https://www.printers-3d.xyz/about-us"
               sx={styles.projectLinks}
               target="_blank"
             >
