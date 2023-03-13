@@ -45,13 +45,13 @@ const ContactMe = () => {
         <Typography variant="h2">Contact</Typography>
         <Box sx={{ display: "flex", gap: "3rem" }}>
           <Link href="https://github.com/hal-alex" target="_blank">
-            <GitHubIcon sx={styles.contactIcon}></GitHubIcon>
+            <GitHubIcon sx={{ fontSize: "450%" }}></GitHubIcon>
           </Link>
           <Link
             href="https://www.linkedin.com/in/alex-h-b88058b1/"
             target="_blank"
           >
-            <LinkedInIcon sx={styles.contactIcon}></LinkedInIcon>
+            <LinkedInIcon sx={{ fontSize: "475%" }}></LinkedInIcon>
           </Link>
         </Box>
         <Box sx={styles.contactFormContainer}>
