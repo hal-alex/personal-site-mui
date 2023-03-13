@@ -10,7 +10,7 @@ const About = () => {
       justifyContent: "center",
       alignItems: "center",
     },
-    wrapper: {
+    wrapper: (theme) => ({
       display: "flex",
       maxWidth: "75%",
       height: "75%",
@@ -19,7 +19,10 @@ const About = () => {
       alignItems: "center",
       gap: "35px",
       textAlign: "center",
-    },
+      [theme.breakpoints.down("md")]: {
+        maxWidth: "95%",
+      },
+    }),
   }
 
   return (

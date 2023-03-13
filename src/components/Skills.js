@@ -101,7 +101,7 @@ const Skills = () => {
           </Box>
           <Box sx={styles.logoContainer}>
             <img src={drf} alt="javascript" style={styles.skillsLogo} />
-            <Typography variant="body1">Django Rest Framework</Typography>
+            <Typography variant="body1">Django REST Framework</Typography>
           </Box>
         </Box>
         <Divider>

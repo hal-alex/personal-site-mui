@@ -29,14 +29,19 @@ const Hero = () => {
       //   padding: "100px",
       [theme.breakpoints.up("md")]: {},
     }),
-    wrapper: {
+    wrapper: (theme) => ({
       display: "flex",
+      maxWidth: "75%",
+      height: "75%",
       flexDirection: "column",
+      justifyContent: "center",
       alignItems: "center",
       gap: "35px",
-      padding: "44px",
       textAlign: "center",
-    },
+      [theme.breakpoints.down("md")]: {
+        maxWidth: "95%",
+      },
+    }),
     buttonContainer: {
       width: "100%",
     },
@@ -53,7 +58,7 @@ const Hero = () => {
           <EmojiPeopleIcon sx={{ fontSize: "75%" }}></EmojiPeopleIcon>
         </Typography>
         <Typography variant="body1" sx={styles.text}>
-          I am a full-stack developer with over 8 years of fintech and
+          I am a full stack developer with over 8 years of fintech and
           blockchain experience, and an active{" "}
           <Link href="https://github.com/hal-alex" target="_blank">
             GitHub account

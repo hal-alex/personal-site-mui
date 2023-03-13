@@ -47,7 +47,7 @@ export default function BasicMenu() {
           <Link href="/#project-1">Project 1 - Factored MVP</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href="/#project-2">Project 2 - Personal Site</Link>
+          <Link href="/#project-2">Project 2 - Printers 3D</Link>
         </MenuItem>
       </Menu>
     </Box>
