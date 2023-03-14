@@ -42,10 +42,13 @@ const About = () => {
           product features.
         </Typography>
         <Typography>
-          In 2022, I decided to complete my skillset and finally become a
-          developer. This process begun with self-teaching and eventually
-          progressed into an intense, full-time bootcamp that gave me valuable
-          foundational knowledge.
+          In 2022, I decided to complete my skillset and requalify a developer.
+          This process begun with self-teaching and eventually progressed into
+          an intense, full-time bootcamp that gave me valuable foundational
+          knowledge.
+        </Typography>
+        <Typography>
+          Shortly after, I landed by first Junior Full Stack Developer role.
         </Typography>
         <Typography>
           Currently, I am improving my existing stack and learning new
