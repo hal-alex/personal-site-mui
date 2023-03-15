@@ -48,12 +48,12 @@ const About = () => {
           knowledge.
         </Typography>
         <Typography>
-          Shortly after, I landed by first Junior Full Stack Developer role.
+          Shortly after, I started first Junior Full Stack Developer role.
         </Typography>
         <Typography>
           Currently, I am improving my existing stack, learning new technologies
           through the process of building unique projects and studying towards
-          AWS Certified Cloud Practitioner.
+          becoming a AWS Certified Cloud Practitioner.
         </Typography>
       </Box>
     </Box>
