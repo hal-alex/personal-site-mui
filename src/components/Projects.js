@@ -85,7 +85,7 @@ const Projects = () => {
           out loans and use their future property rent as collateral.
         </Typography>
         <Grid container>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Link
               href="https://github.com/hal-alex/factored-mvp"
               sx={styles.projectLinks}
@@ -95,7 +95,7 @@ const Projects = () => {
               <Typography>View Frontend Repo</Typography>
             </Link>
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Link
               href="https://github.com/hal-alex/factored-mvp-backend"
               sx={styles.projectLinks}
@@ -105,7 +105,7 @@ const Projects = () => {
               <Typography>View Backend Repo</Typography>
             </Link>
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Link
               href="https://github.com/hal-alex/factored-mvp-backend"
               sx={styles.projectLinks}
@@ -115,7 +115,7 @@ const Projects = () => {
               <Typography>View Deployed App</Typography>
             </Link>
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Link
               href="https://www.app.factored.co/about-factored-app/"
               sx={styles.projectLinks}
@@ -360,7 +360,7 @@ const Projects = () => {
           reasons.
         </Typography>
         <Grid container>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Link
               href="https://www.printers-3d.xyz/"
               sx={styles.projectLinks}
@@ -370,7 +370,7 @@ const Projects = () => {
               <Typography>View Deployed App</Typography>
             </Link>
           </Grid>
-          <Grid item md={6}>
+          <Grid item xs={12} md={6}>
             <Link
               href="https://www.printers-3d.xyz/about-us"
               sx={styles.projectLinks}
