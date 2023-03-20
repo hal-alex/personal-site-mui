@@ -359,6 +359,7 @@ const Projects = () => {
           GitHub repos for frontend and backend apps are private for commercial
           reasons.
         </Typography>
+        
         <Grid container>
           <Grid item xs={12} md={6}>
             <Link
