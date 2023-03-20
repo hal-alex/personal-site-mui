@@ -15,6 +15,8 @@ import {
 
 import DropdownMenu from "./DropdownMenu"
 
+import HeaderToggle from "./HeaderToggle"
+
 const styles = {
   appBar: {
     background: "#F5F5F5",
@@ -56,6 +58,7 @@ const Header = () => {
               )
             })}
           </Box>
+          <HeaderToggle></HeaderToggle>
         </Toolbar>
       </Container>
     </AppBar>
