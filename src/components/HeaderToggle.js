@@ -8,15 +8,21 @@ import { useGlobalContext } from "../globalContext"
 const HeaderToggle = () => {
   const { handleChange } = useGlobalContext()
 
+  const styles = {
+    toggleText: {
+      color: "#777FEB",
+      fontSize: "15px",
+    },
+  }
+
   return (
-    <FormGroup>
-      <Typography>Short Version</Typography>
+    <FormGroup sx={{ display: "flex", flexDirection: "row", gap: "10px" }}>
+      <Typography style={styles.toggleText}>More Detail</Typography>
       <FormControlLabel
         onChange={handleChange}
-        control={<Switch defaultChecked />}
-        label="Label"
+        labelPosition="left"
+        control={<Switch size="small" />}
       />
-      <Typography>Long Version</Typography>
     </FormGroup>
   )
 }

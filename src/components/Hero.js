@@ -1,8 +1,11 @@
 import { Typography, Box, Button, Link } from "@mui/material"
 import { useState, useEffect } from "react"
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople"
+import { useGlobalContext } from "../globalContext"
 
 const Hero = () => {
+  const { showLongVersion } = useGlobalContext()
+
   const [timeOfDayGreeting, setTimeOfDayGreeting] = useState("Hello")
 
   let dayTime = parseInt(new Date().toString().split(" ")[4].split(":")[0])
@@ -51,7 +54,7 @@ const Hero = () => {
   }
 
   return (
-    <Box sx={styles.hero}>
+    <Box sx={styles.hero} id="hero">
       <Box sx={styles.wrapper}>
         <Typography variant="h2">
           {timeOfDayGreeting}{" "}
@@ -65,13 +68,15 @@ const Hero = () => {
           </Link>
           .
         </Typography>
-        <Box sx={styles.buttonContainer}>
-          <Link href="/#skills">
-            <Button variant="contained" sx={styles.ctaButton}>
-              View Skills
-            </Button>
-          </Link>
 
+        <Box sx={styles.buttonContainer}>
+          {showLongVersion && (
+            <Link href="/#skills">
+              <Button variant="contained" sx={styles.ctaButton}>
+                View Skills
+              </Button>
+            </Link>
+          )}
           <Link href="/#projects">
             <Button variant="contained" sx={styles.ctaButton}>
               View Projects

@@ -1,4 +1,4 @@
-import React from "react"
+import { useGlobalContext } from "../globalContext"
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 
@@ -32,16 +32,27 @@ const styles = {
   },
   linkContainer: {
     display: "flex",
+    marginLeft: "auto",
   },
 }
 
 const Header = () => {
+  const { showLongVersion } = useGlobalContext()
+
   const pages = [
-    { title: "About", inpageURL: "/#about" },
-    { title: "Skills", inpageURL: "/#skills" },
+    { title: "Start", inpageURL: "/#hero" },
     { title: "Projects" },
     { title: "Contact", inpageURL: "/#contact" },
   ]
+
+  if (showLongVersion) {
+    pages.splice(
+      1,
+      0,
+      { title: "About", inpageURL: "/#about" },
+      { title: "Skills", inpageURL: "/#skills" },
+    )
+  }
 
   return (
     <AppBar position="sticky" elevation={0} sx={styles.appBar}>
@@ -58,7 +69,9 @@ const Header = () => {
               )
             })}
           </Box>
-          <HeaderToggle></HeaderToggle>
+          <Box sx={{ marginLeft: "auto" }}>
+            <HeaderToggle></HeaderToggle>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
