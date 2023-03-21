@@ -62,6 +62,14 @@ const Projects = () => {
       padding: "20px",
       textAlign: "left",
     },
+    videoContainer: (theme) => ({
+      width: "900px",
+      height: "500px",
+      [theme.breakpoints.down("md")]: {
+        width: "400px",
+        height: "222px",
+      },
+    }),
   }
 
   return (
@@ -100,7 +108,7 @@ const Projects = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Link
-              href="https://github.com/hal-alex/factored-mvp-backend"
+              href="https://www.app.factored.co/"
               sx={styles.projectLinks}
               target="_blank"
             >
@@ -119,6 +127,17 @@ const Projects = () => {
             </Link>
           </Grid>
         </Grid>
+        <Divider>
+          <Typography variant="h5">Product Demo</Typography>
+        </Divider>
+        <Box sx={styles.videoContainer}>
+          <iframe
+            src="https://drive.google.com/file/d/1SXv0SL86Eu9VjPsIOb7l-GT0l7LUwpAm/preview"
+            width="100%"
+            height="100%"
+            allow="autoplay"
+          ></iframe>
+        </Box>
         {showLongVersion && <ProjectOneDeets></ProjectOneDeets>}
 
         <Typography variant="h3" id="project-2">
@@ -135,7 +154,17 @@ const Projects = () => {
           GitHub repos for frontend and backend apps are private for commercial
           reasons.
         </Typography>
-
+        <Divider>
+          <Typography variant="h5">Product Demo</Typography>
+        </Divider>
+        <Box sx={styles.videoContainer}>
+          <iframe
+            src="https://drive.google.com/file/d/11llbdiAeVA6RyHipClt87QP0yOZ4mehp/preview"
+            width="100%"
+            height="100%"
+            allow="autoplay"
+          ></iframe>
+        </Box>
         <Grid container>
           <Grid item xs={12} md={6}>
             <Link
@@ -195,6 +224,17 @@ const Projects = () => {
           </Grid>
         </Grid>
         <Divider>
+          <Typography variant="h5">Product Demo</Typography>
+        </Divider>
+        <Box sx={styles.videoContainer}>
+          <iframe
+            src="https://drive.google.com/file/d/1Hl9QJMzTKQenJ0FZSm3GjRrN04KiCj7w/preview"
+            width="100%"
+            height="100%"
+            allow="autoplay"
+          ></iframe>
+        </Box>
+        <Divider>
           <Typography variant="h3">Mario Game</Typography>
         </Divider>
         <Typography variant="body1">
@@ -225,6 +265,17 @@ const Projects = () => {
             </Link>
           </Grid>
         </Grid>
+        <Divider>
+          <Typography variant="h5">Product Demo (video has sound)</Typography>
+        </Divider>
+        <Box sx={styles.videoContainer}>
+          <iframe
+            src="https://drive.google.com/file/d/1skg1hzUvyXgqHfS4nUryoxzGDRhf5jg3/preview"
+            width="100%"
+            height="100%"
+            allow="autoplay"
+          ></iframe>
+        </Box>
       </Box>
     </Box>
   )

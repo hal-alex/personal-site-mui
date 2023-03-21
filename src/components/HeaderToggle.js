@@ -27,7 +27,6 @@ const HeaderToggle = () => {
       <Typography style={styles.toggleText}>Detailed View</Typography>
       <FormControlLabel
         onChange={handleChange}
-        labelPosition="left"
         control={<Switch size="small" />}
       />
     </FormGroup>
