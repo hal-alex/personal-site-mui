@@ -15,8 +15,6 @@ import {
 
 import DropdownMenu from "./DropdownMenu"
 
-import HeaderToggle from "./HeaderToggle"
-
 const styles = {
   appBar: {
     background: "#F5F5F5",
@@ -32,7 +30,6 @@ const styles = {
   },
   linkContainer: {
     display: "flex",
-    marginLeft: "auto",
   },
 }
 
@@ -68,9 +65,6 @@ const Header = () => {
                 </Link>
               )
             })}
-          </Box>
-          <Box sx={{ marginLeft: "auto" }}>
-            <HeaderToggle></HeaderToggle>
           </Box>
         </Toolbar>
       </Container>

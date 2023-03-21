@@ -16,7 +16,14 @@ const HeaderToggle = () => {
   }
 
   return (
-    <FormGroup sx={{ display: "flex", flexDirection: "row", gap: "10px" }}>
+    <FormGroup
+      sx={{
+        display: "flex",
+        flexDirection: "row",
+        gap: "10px",
+        alignItems: "center",
+      }}
+    >
       <Typography style={styles.toggleText}>More Detail</Typography>
       <FormControlLabel
         onChange={handleChange}
