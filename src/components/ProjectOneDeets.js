@@ -141,7 +141,7 @@ const ProjectOneDeets = () => {
               React – I used React for the frontend functionality and axios
               library for interacting with the backend. When a user logs in, an
               auth token is saved to local storage and is used with each request
-              to the backend to authenticate it. I also used react router dom to
+              to the backend to authenticate it. I also used React Router libary to
               fetch the URL details to identify each advance (loan).
               <br></br>
               <br></br>
@@ -245,7 +245,7 @@ const ProjectOneDeets = () => {
             I moved away from using global context and added similar code to
             each page/component to ensure no race conditions would be present.
             This is not the most elegant solution and in the future, I plan to
-            refactor the code, and perhaps use React Router Dom or Redux to
+            refactor the code, and perhaps use React Router or Redux to
             reduce the amount of states and functions.
           </Card>
         </Grid>
