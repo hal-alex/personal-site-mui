@@ -24,7 +24,7 @@ const HeaderToggle = () => {
         alignItems: "center",
       }}
     >
-      <Typography style={styles.toggleText}>More Detail</Typography>
+      <Typography style={styles.toggleText}>Detailed View</Typography>
       <FormControlLabel
         onChange={handleChange}
         labelPosition="left"

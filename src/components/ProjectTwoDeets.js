@@ -107,7 +107,7 @@ const ProjectTwoDeets = () => {
           {" "}
           <Card sx={styles.customCard}>
             <DoneIcon sx={styles.cardTick}></DoneIcon>
-            Close to 400 images stored in S3 and 2000 data points in total
+            Close to 400 images stored in S3 and 2000 data points in PostgreSQL total
           </Card>
         </ListItem>
       </List>
@@ -179,7 +179,7 @@ const ProjectTwoDeets = () => {
               <br></br>
               <br></br>
               To interact with Django's shell once the project was deployed, I
-              would use Putty to{" "}
+              would
               <Typography sx={styles.codeSpan}>ssh</Typography> into the EC2
               instance to run jobs like migrating and seeding the database.
             </Typography>

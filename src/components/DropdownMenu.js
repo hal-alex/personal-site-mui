@@ -49,6 +49,9 @@ export default function BasicMenu() {
         <MenuItem onClick={handleClose}>
           <Link href="/#project-2">Project 2 - Printers 3D</Link>
         </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href="/#bootcamp-projects">Bootcamp 2022 Projects</Link>
+        </MenuItem>
       </Menu>
     </Box>
   )

@@ -36,12 +36,6 @@ const About = () => {
           relations, customer support and more.
         </Typography>
         <Typography>
-          Whilst my previous titles were not explicitly technical, I had
-          significant exposure to working with software engineers, as well as
-          in-depth product testing and creating detailed specifications for new
-          product features.
-        </Typography>
-        <Typography>
           In 2022, I decided to complete my skillset and requalify a developer.
           This process begun with self-teaching and eventually progressed into
           an intense, full-time bootcamp that gave me valuable foundational

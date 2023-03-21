@@ -1,18 +1,6 @@
-import {
-  Box,
-  Card,
-  Divider,
-  Typography,
-  List,
-  ListItem,
-  Grid,
-  Link,
-} from "@mui/material"
-import Accordion from "@mui/material/Accordion"
-import AccordionSummary from "@mui/material/AccordionSummary"
-import AccordionDetails from "@mui/material/AccordionDetails"
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
-import DoneIcon from "@mui/icons-material/Done"
+import { Box, Button, Divider, Typography, Grid, Link } from "@mui/material"
+
+import Tooltip from "@mui/material/Tooltip"
 
 import GitHubIcon from "@mui/icons-material/GitHub"
 import PreviewIcon from "@mui/icons-material/Preview"
@@ -132,6 +120,7 @@ const Projects = () => {
           </Grid>
         </Grid>
         {showLongVersion && <ProjectOneDeets></ProjectOneDeets>}
+
         <Typography variant="h3" id="project-2">
           Project 2 - Printers 3D
         </Typography>
@@ -170,6 +159,72 @@ const Projects = () => {
           </Grid>
         </Grid>
         {showLongVersion && <ProjectTwoDeets></ProjectTwoDeets>}
+
+        <Typography variant="h3" id="bootcamp-projects">
+          Bootcamp 2022 Projects
+        </Typography>
+        <Divider>
+          <Typography variant="h3">Trivia Quiz</Typography>
+        </Divider>
+        <Typography variant="body1">
+          This was a duo project (I worked with another classmate) to develop a
+          React frontend app that would consume a public API, serve questions +
+          possible options, keep track of the score and at the end display the
+          correct answers.
+        </Typography>
+        <Grid container>
+          <Grid item xs={12} md={6}>
+            <Link
+              href="https://github.com/hal-alex/ga-project-2-trivia"
+              sx={styles.projectLinks}
+              target="_blank"
+            >
+              <PreviewIcon></PreviewIcon>
+              <Typography>View Frontend Repo</Typography>
+            </Link>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Link
+              href="https://sei-project2-quiz.netlify.app/"
+              sx={styles.projectLinks}
+              target="_blank"
+            >
+              <PreviewIcon></PreviewIcon>
+              <Typography>View Deployed App</Typography>
+            </Link>
+          </Grid>
+        </Grid>
+        <Divider>
+          <Typography variant="h3">Mario Game</Typography>
+        </Divider>
+        <Typography variant="body1">
+          This was a solo project that I build using only HTML, CSS and vanilla
+          JavaScript. The brief was to develop a simple game that had character
+          movement, a mechanism that would keep track of score and amount of
+          lives.
+        </Typography>
+        <Grid container>
+          <Grid item xs={12} md={6}>
+            <Link
+              href="https://github.com/hal-alex/ga-project-1-mario"
+              sx={styles.projectLinks}
+              target="_blank"
+            >
+              <PreviewIcon></PreviewIcon>
+              <Typography>View Frontend Repo</Typography>
+            </Link>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Link
+              href="https://hal-alex.github.io/ga-project-1-mario/"
+              sx={styles.projectLinks}
+              target="_blank"
+            >
+              <PreviewIcon></PreviewIcon>
+              <Typography>View Deployed App</Typography>
+            </Link>
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   )
