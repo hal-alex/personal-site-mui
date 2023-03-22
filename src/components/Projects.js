@@ -238,7 +238,7 @@ const Projects = () => {
           <Typography variant="h3">Mario Game</Typography>
         </Divider>
         <Typography variant="body1">
-          This was a solo project that I build using only HTML, CSS and vanilla
+          This was a solo project that I built using only HTML, CSS and vanilla
           JavaScript. The brief was to develop a simple game that had character
           movement, a mechanism that would keep track of score and amount of
           lives.

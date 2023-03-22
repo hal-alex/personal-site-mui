@@ -7,8 +7,6 @@ const AppProvider = ({ children }) => {
 
   const handleChange = () => {
     setShowLongVersion(!showLongVersion)
-    console.log(showLongVersion)
-    console.log("test")
   }
 
   return (
