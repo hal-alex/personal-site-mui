@@ -30,6 +30,7 @@ const HeaderToggle = () => {
       <FormControlLabel
         onChange={handleChange}
         control={<Switch size="small" />}
+        sx={{ ml: "1px" }}
       />
     </FormGroup>
   )

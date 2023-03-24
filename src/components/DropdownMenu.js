@@ -5,14 +5,6 @@ import MenuItem from "@mui/material/MenuItem"
 import { Link, Box } from "@mui/material"
 
 export default function BasicMenu() {
-  const styles = {
-    dropdownMenu: {
-      textTransform: "capitalize",
-      pt: "9px",
-      textDecoration: "underline",
-    },
-  }
-
   const [anchorEl, setAnchorEl] = useState(null)
   const open = Boolean(anchorEl)
   const handleClick = (event) => {
@@ -23,17 +15,17 @@ export default function BasicMenu() {
   }
 
   return (
-    <Box>
-      <Button
-        id="basic-button"
-        aria-controls={open ? "basic-menu" : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
-        onClick={handleClick}
-        sx={styles.dropdownMenu}
-      >
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        cursor: "pointer",
+        padding: "10px",
+      }}
+    >
+      <Link id="basic-button" onClick={handleClick}>
         Projects
-      </Button>
+      </Link>
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
