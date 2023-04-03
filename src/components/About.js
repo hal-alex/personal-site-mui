@@ -46,8 +46,9 @@ const About = () => {
         </Typography>
         <Typography>
           Currently, I am improving my existing stack, learning new technologies
-          through the process of building unique projects and studying towards
-          becoming a AWS Certified Cloud Practitioner.
+          (Node.js and TypeScript) through the process of building unique
+          projects and studying towards becoming a AWS Certified Cloud
+          Practitioner.
         </Typography>
       </Box>
     </Box>
