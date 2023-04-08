@@ -1,4 +1,4 @@
-import { Typography, Box, Button, Link } from "@mui/material"
+import { Typography, Box } from "@mui/material"
 
 const About = () => {
   const styles = {
@@ -47,8 +47,11 @@ const About = () => {
         <Typography>
           Currently, I am improving my existing stack, learning new technologies
           (Node.js and TypeScript) through the process of building unique
-          projects and studying towards becoming a AWS Certified Cloud
-          Practitioner.
+          projects.
+        </Typography>
+        <Typography>
+          In April 2023, I have successfully passed the AWS Cloud Practitioner
+          exam and achieved the AWS Certified Cloud Practitioner Certification.
         </Typography>
       </Box>
     </Box>

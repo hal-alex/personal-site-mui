@@ -1,6 +1,4 @@
-import { Box, Button, Divider, Typography, Grid, Link } from "@mui/material"
-
-import Tooltip from "@mui/material/Tooltip"
+import { Box, Divider, Typography, Grid, Link } from "@mui/material"
 
 import GitHubIcon from "@mui/icons-material/GitHub"
 import PreviewIcon from "@mui/icons-material/Preview"

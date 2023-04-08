@@ -1,7 +1,5 @@
 import { useGlobalContext } from "../globalContext"
 
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
-
 import {
   AppBar,
   Box,
